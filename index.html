@@ -5,9 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sekolah Islam Abais</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>bismillah</h1>
-    <p>tambahan</p>
+    <!-- Navbar -->
+    <nav class="flex items-center p-4 bg-gray-100">
+        <!-- Logo -->
+        <a href="/" class="pl-4">
+        <img class="h-10 md:h-12 lg:h-14 w-auto"
+            src="https://www.abaisassunnah.sch.id/wp-content/uploads/2022/12/logo-abais-islamic-school.png"
+            alt="logo abais">
+        </a>
+
+        <!-- Desktop menu -->
+        <div class="hidden md:flex items-center space-x-12 mx-auto">
+        <!-- Home dropdown -->
+        <div class="relative group">
+            <button class="flex items-center space-x-1 text-gray-700 hover:text-blue-600">
+            <span>Home</span>
+            <svg class="w-4 h-4 relative top-[2px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 9l-7 7-7-7"/>
+            </svg>
+            </button>
+
+            <!-- Dropdown -->
+            <div
+            class="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2 
+                    opacity-0 pointer-events-none
+                    group-hover:opacity-100 group-hover:pointer-events-auto
+                    transition-all duration-300 ease-out
+                    before:content-[''] before:absolute before:-top-2 before:left-0 before:w-full before:h-2">
+            <a href="#pengurus" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pengurus</a>
+            <a href="#visi" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Visi Misi</a>
+            </div>
+        </div>
+
+        <a href="#program" class="text-gray-700 hover:text-blue-600">Program</a>
+        <a href="#galeri" class="text-gray-700 hover:text-blue-600">Galeri</a>
+        </div>
+
+        <!-- Button daftar -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKZOsMm-zaQ7krniZUU1CxjH0-hPZpL28fDR1t7wyAA6nI1A/viewform"
+        target="_blank" rel="noopener noreferrer"
+        class="hidden md:inline-block ml-auto bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-2.5
+                rounded-full shadow-md transition transform hover:scale-105">
+        Daftar Sekarang
+        </a>
+
+        <!-- Hamburger button (mobile only) -->
+        <button id="hamburger"
+                class="ml-auto md:hidden text-gray-700 focus:outline-none">
+            <!-- Icon -->
+            <svg class="w-8 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </nav>
+
+  <!-- Sidebar mobile menu -->
+  <div id="mobileMenu"
+       class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg transform translate-x-full 
+              transition-transform duration-300 ease-in-out z-50 rounded-lg">
+    <div class="flex flex-col p-6 space-y-4">
+      <button id="closeMenu" class="self-end text-gray-600 hover:text-gray-900">
+        ✕
+      </button>
+      <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="#pengurus" class="text-gray-700 hover:text-blue-600">Pengurus</a>
+      <a href="#visi" class="text-gray-700 hover:text-blue-600">Visi Misi</a>
+      <a href="#program" class="text-gray-700 hover:text-blue-600">Program</a>
+      <a href="#galeri" class="text-gray-700 hover:text-blue-600">Galeri</a>
+      <a hre="https://docs.google.com/forms/d/e/1FAIpQLSeKZOsMm-zaQ7krniZUU1CxjH0-hPZpL28fDR1t7wyAA6nI1A/viewform"
+         target="_blank"
+         class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-4 py-2 rounded-lg text-center">
+        Daftar Sekarang
+      </a>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
