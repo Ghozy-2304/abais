@@ -9,7 +9,9 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="flex items-center p-4 bg-gray-100">
+    <nav id="navbar" class="sticky top-0 w-full flex items-center p-4 
+            bg-gray-100 bg-opacity-70 backdrop-blur-md 
+            z-50 shadow-md transition-all duration-500">
         <!-- Logo -->
         <a href="/" class="pl-4">
         <img class="h-10 md:h-12 lg:h-14 w-auto"
@@ -34,7 +36,7 @@
             class="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2 
                     opacity-0 pointer-events-none
                     group-hover:opacity-100 group-hover:pointer-events-auto
-                    transition-all duration-300 ease-out
+                    transition-all duration-300 ease-out z-20 
                     before:content-[''] before:absolute before:-top-2 before:left-0 before:w-full before:h-2">
             <a href="#pengurus" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pengurus</a>
             <a href="#visi" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Visi Misi</a>
@@ -84,7 +86,34 @@
       </a>
     </div>
   </div>
+<!-- Hero Banner -->
+<section id="hero" class="relative w-full">
+  <!-- Background image -->
+  <img 
+    src="https://www.abaisassunnah.sch.id/wp-content/uploads/2022/12/slide-1-abais-as-sunnah-pamulang-rev-2.jpg" 
+    alt="Hero Banner" 
+    class="w-full h-[60vh] md:h-[80vh] lg:h-[100vh] object-cover object-left"
+  >
+  
+  <!-- Overlay gelap -->
+  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
+  <!-- Content -->
+  <div class="absolute inset-0 z-10 flex flex-col justify-center max-w-6xl px-6 md:px-12 lg:px-16">
+    <h1 class="text-white text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+      Mencetak generasi unggul dengan Al Qur’an dan As sunnah
+    </h1>
+    <p class="text-white text-lg md:text-xl lg:text-2xl mb-6">
+      Website resmi Abais Islamic School
+    </p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKZOsMm-zaQ7krniZUU1CxjH0-hPZpL28fDR1t7wyAA6nI1A/viewform"
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 md:px-8 md:py-4 rounded-full shadow-md transition transform hover:scale-105 w-max">
+      Daftar Sekarang
+    </a>
+  </div>
+</section>
   <script src="main.js"></script>
 </body>
 </html>
