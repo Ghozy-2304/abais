@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sekolah Islam Abais</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sekolah Islam Abais</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav id="navbar" class="sticky top-0 w-full flex items-center p-4 
-            bg-gray-100 bg-opacity-70 backdrop-blur-md 
-            z-50 shadow-md transition-all duration-500">
-        <!-- Logo -->
-        <a href="/" class="pl-4">
-        <img class="h-10 md:h-12 lg:h-14 w-auto"
-            src="https://www.abaisassunnah.sch.id/wp-content/uploads/2022/12/logo-abais-islamic-school.png"
-            alt="logo abais">
-        </a>
+  <!-- Navbar -->
+  <nav id="navbar" class="sticky top-0 w-full flex items-center p-4 
+        bg-gray-100 bg-opacity-70 backdrop-blur-md 
+        z-50 shadow-md transition-all duration-500">
 
-        <!-- Desktop menu -->
-        <div class="hidden md:flex items-center space-x-12 mx-auto">
-        <!-- Home dropdown -->
-        <div class="relative group">
-            <button class="flex items-center space-x-1 text-gray-700 hover:text-blue-600">
-            <span>Home</span>
-            <svg class="w-4 h-4 relative top-[2px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M19 9l-7 7-7-7"/>
-            </svg>
-            </button>
+    <!-- Logo -->
+    <a href="/" class="pl-4">
+      <img class="h-10 md:h-12 lg:h-14 w-auto"
+           src="https://www.abaisassunnah.sch.id/wp-content/uploads/2022/12/logo-abais-islamic-school.png"
+           alt="logo abais">
+    </a>
 
-            <!-- Dropdown -->
-            <div
-            class="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2 
+    <!-- Desktop menu -->
+    <div class="hidden md:flex items-center space-x-12 mx-auto">
+      <!-- Home dropdown -->
+      <div class="relative group">
+        <button class="flex items-center space-x-1 text-gray-700 hover:text-blue-600">
+          <span>Home</span>
+          <svg class="w-4 h-4 relative top-[2px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M19 9l-7 7-7-7"/>
+          </svg>
+        </button>
+
+        <!-- Dropdown -->
+        <div class="absolute left-0 top-full mt-2 w-40 bg-white shadow-lg rounded-lg py-2 
                     opacity-0 pointer-events-none
                     group-hover:opacity-100 group-hover:pointer-events-auto
                     transition-all duration-300 ease-out z-20 
                     before:content-[''] before:absolute before:-top-2 before:left-0 before:w-full before:h-2">
-            <a href="#pengurus" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pengurus</a>
-            <a href="#visi" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Visi Misi</a>
-            </div>
+          <a href="#pengurus" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Pengurus</a>
+          <a href="#visi" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Visi Misi</a>
         </div>
+      </div>
 
-        <a href="#program" class="text-gray-700 hover:text-blue-600">Program</a>
-        <a href="#galeri" class="text-gray-700 hover:text-blue-600">Galeri</a>
-        </div>
+      <a href="#program" class="text-gray-700 hover:text-blue-600">Program</a>
+      <a href="#galeri" class="text-gray-700 hover:text-blue-600">Galeri</a>
+    </div>
 
-        <!-- Button daftar -->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKZOsMm-zaQ7krniZUU1CxjH0-hPZpL28fDR1t7wyAA6nI1A/viewform"
-        target="_blank" rel="noopener noreferrer"
-        class="hidden md:inline-block ml-auto bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-2.5
-                rounded-full shadow-md transition transform hover:scale-105">
-        Daftar Sekarang
-        </a>
+    <!-- Button daftar -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKZOsMm-zaQ7krniZUU1CxjH0-hPZpL28fDR1t7wyAA6nI1A/viewform"
+       target="_blank" rel="noopener noreferrer"
+       class="hidden md:inline-block ml-auto bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-2.5
+              rounded-full shadow-md transition transform hover:scale-105">
+      Daftar Sekarang
+    </a>
 
-        <!-- Hamburger button (mobile only) -->
-        <button id="hamburger"
-                class="ml-auto md:hidden text-gray-700 focus:outline-none">
-            <!-- Icon -->
-            <svg class="w-8 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                    d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-        </button>
-    </nav>
+    <!-- Hamburger button (mobile only) -->
+    <button id="hamburger" class="ml-auto md:hidden text-gray-700 focus:outline-none">
+      <svg class="w-8 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+  </nav>
 
   <!-- Sidebar mobile menu -->
   <div id="mobileMenu"
@@ -75,143 +73,200 @@
       <button id="closeMenu" class="self-end text-gray-600 hover:text-gray-900">
         ✕
       </button>
-      <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
-      <a href="#pengurus" class="text-gray-700 hover:text-blue-600">Pengurus</a>
-      <a href="#visi" class="text-gray-700 hover:text-blue-600">Visi Misi</a>
-      <a href="#program" class="text-gray-700 hover:text-blue-600">Program</a>
-      <a href="#galeri" class="text-gray-700 hover:text-blue-600">Galeri</a>
+      <a href="#home" class="text-gray-700 hover:text-blue-600 menuMobile">Home</a>
+      <a href="#pengurus" class="text-gray-700 hover:text-blue-600 menuMobile">Pengurus</a>
+      <a href="#visi" class="text-gray-700 hover:text-blue-600 menuMobile">Visi Misi</a>
+      <a href="#program" class="text-gray-700 hover:text-blue-600 menuMobile">Program</a>
+      <a href="#galeri" class="text-gray-700 hover:text-blue-600 menuMobile">Galeri</a>
       <a hre="https://docs.google.com/forms/d/e/1FAIpQLSeKZOsMm-zaQ7krniZUU1CxjH0-hPZpL28fDR1t7wyAA6nI1A/viewform"
          target="_blank"
          class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-4 py-2 rounded-lg text-center">
         Daftar Sekarang
       </a>
+      <!-- SARAN: di atas ada typo atribut "hre" → seharusnya "href" -->
     </div>
   </div>
-<!-- Hero Banner -->
-<section id="hero" class="relative w-full">
-  <!-- Background image -->
-  <img 
-    src="https://www.abaisassunnah.sch.id/wp-content/uploads/2022/12/slide-1-abais-as-sunnah-pamulang-rev-2.jpg" 
-    alt="Hero Banner" 
-    class="w-full h-[60vh] md:h-[80vh] lg:h-[100vh] object-cover object-left"
-  >
-  
-  <!-- Overlay gelap -->
-  <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
-  <!-- Content -->
-  <div class="absolute inset-0 z-10 flex flex-col justify-center max-w-6xl px-6 md:px-12 lg:px-16">
-    <h1 class="text-white text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
-      Mencetak generasi unggul dengan Al Qur’an dan As sunnah
-    </h1>
-    <p class="text-white text-lg md:text-xl lg:text-2xl mb-6">
-      Website resmi Abais Islamic School
-    </p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKZOsMm-zaQ7krniZUU1CxjH0-hPZpL28fDR1t7wyAA6nI1A/viewform"
-       target="_blank" 
-       rel="noopener noreferrer"
-       class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 md:px-8 md:py-4 rounded-full shadow-md transition transform hover:scale-105 w-max">
-      Daftar Sekarang
-    </a>
-  </div>
-</section>
+  <!-- Hero Banner -->
+  <section id="hero" class="relative w-full">
+    <img src="https://www.abaisassunnah.sch.id/wp-content/uploads/2022/12/slide-1-abais-as-sunnah-pamulang-rev-2.jpg" 
+         alt="Hero Banner" 
+         class="w-full h-[60vh] md:h-[80vh] lg:h-[100vh] object-cover object-left">
 
-<!-- Section Deskripsi Sekolah -->
-<section class="w-full bg-gray-50 py-16">
-  <div class="max-w px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
 
-    <!-- Kolom 1: Deskripsi -->
-    <div class="space-y-6">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 text-center lg:text-left">Deskripsi Sekolah</h2>
-      <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center lg:text-left">
-        Sekolah kami berkomitmen untuk mendidik generasi millennial yang beriman, berilmu, dan berakhlak mulia. Setiap siswa dibekali dengan pemahaman Tauhid kepada Allah, ilmu syar’i yang shahih, serta kemampuan akademis dan Qur’ani yang seimbang.
+    <div class="absolute inset-0 z-10 flex flex-col justify-center max-w-6xl px-6 md:px-12 lg:px-16">
+      <h1 class="text-white text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+        Mencetak generasi unggul dengan Al Qur’an dan As sunnah
+      </h1>
+      <p class="text-white text-lg md:text-xl lg:text-2xl mb-6">
+        Website resmi Abais Islamic School
       </p>
-      <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center lg:text-left">
-        Pendidikan di sekolah ini dirancang secara terpadu, berlandaskan 3 pilar utama: Iman, Adab, dan Al-Qur’an, sehingga setiap siswa mampu menginternalisasi nilai-nilai Islam dalam kehidupan sehari-hari. Kami menekankan pengembangan akhlak mulia, kecerdasan, kemandirian, serta sikap berbakti kepada orang tua dan lingkungan sekitar.
-      </p>
-      <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center lg:text-left">
-        Melalui program pendidikan yang holistik, sekolah kami bertujuan mencetak siswa yang tidak hanya unggul secara akademis, tetapi juga teladan dalam akhlak, berpandangan luas, dan siap menghadapi tantangan zaman. Kami percaya bahwa generasi yang sholeh, cerdas, dan kreatif adalah kunci untuk membangun masa depan yang lebih baik.
-      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeKZOsMm-zaQ7krniZUU1CxjH0-hPZpL28fDR1t7wyAA6nI1A/viewform"
+         target="_blank" rel="noopener noreferrer"
+         class="bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 md:px-8 md:py-4 
+                rounded-full shadow-md transition transform hover:scale-105 w-max">
+        Daftar Sekarang
+      </a>
     </div>
+  </section>
 
-<!-- Section Program Unggulan -->
-<section id="program" class="w-full bg-gray-50">
-  <div class="max-w-7xl mx-auto px-6 md:px-5 lg:px-16 ">
-    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-12 text-center">
-      Program Unggulan
-    </h2>
+  <!-- container 1 -->
+  <section class="w-full bg-gray-50 py-16">
+    <div class="px-6 md:px-12 lg:px-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
+      
+      <!-- Section Deskripsi Sekolah -->
+      <section class="bg-white px-6 md:px-12 lg:px-24">
+        <div class="max-w-4xl mx-auto space-y-8">
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 text-center">
+            Tentang Sekolah Abais Islamic School
+          </h2>
+          <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center">
+            Abais Islamic School adalah sekolah Islam berbasis Ahlus Sunnah wal Jama’ah, beroperasi resmi dengan 
+            izin operasional <strong>No. 421.1/80-DPMPTSP/OL/2023</strong> dan <strong>NPSN 70044715</strong>, 
+            berlokasi di Pamulang Permai 1 Blok A26 No.4&5, Pamulang Barat, Tangerang Selatan. 
+            Kami menerapkan kurikulum Kemendikbud yang terpadu dengan pendidikan Al-Qur’an dan As-Sunnah.
+          </p>
 
-    <!-- Row Atas -->
-    <div class="items-center grid grid-cols-1 md:grid-cols-2 lg:gap-y-32 gap-x-8 gap-8 lg:mt-32">
-      <!-- Card 1 -->
-      <div class="p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform lg:-translate-y-0 mx-auto md:mx-0 md:w-full md:my-5">
-        <div class="flex justify-center mb-4 text-emerald-500 text-4xl">
-          <i class="fas fa-book"></i>
+          <div class="bg-gray-50 rounded-2xl p-6 shadow-sm">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Visi & Misi</h3>
+            <p class="text-gray-700 text-base md:text-lg leading-relaxed">
+              <strong>Visi:</strong> Mendidik generasi millennial yang berlandaskan tauhid kepada Allah, 
+              memahami ilmu syar’i yang shahih, serta berkompetensi akademis dan qur’ani.
+            </p>
+            <p class="text-gray-700 text-base md:text-lg leading-relaxed mt-3">
+              <strong>Misi:</strong> Membangun karakter siswa yang mentauhidkan Allah, berlandaskan nilai Qur’an 
+              dan manhaj Salafush Shalih; mengimplementasikan pendidikan holistik berbasis Iman, Adab, dan Al-Qur’an; 
+              serta menumbuhkan kecerdasan, independensi, dan bakti kepada orang tua.
+            </p>
+          </div>
+
+          <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center">
+            Abais Islamic School juga memiliki <em>Rumah Tahfidz Qur’an</em> yang mendampingi siswa menghafal dan memahami 
+            Al-Qur’an dengan metode intensif dan sistematis. Fasilitas belajar mendukung seperti lingkungan kondusif, 
+            tenaga pengajar berkompeten, dan penguatan karakter Islami terpadu.
+          </p>
         </div>
-        <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">Tahfizh Qur'an Terarah (TK)</h3>
-        <p class="text-gray-600 text-center">Program tahfizh Juz 30 untuk anak usia TK dengan metode terarah dan menyenangkan.</p>
+      </section>
+
+      <!-- Section Program Unggulan -->
+      <section id="program" class="w-full bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6 md:px-5 lg:px-16">
+          <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-12 text-center">
+            Program Unggulan
+          </h2>
+
+          <div class="items-center grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Card 1 -->
+            <div class="p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform mx-auto md:mx-0 md:w-full md:my-5">
+              <div class="flex justify-center mb-4 text-emerald-500 text-4xl">
+                <i class="fas fa-book"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">Tahfizh Qur'an Terarah (TK)</h3>
+              <p class="text-gray-600 text-center">Program tahfizh Juz 30 untuk anak usia TK dengan metode terarah dan menyenangkan.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform mx-auto md:my-5 md:mx-0 md:w-full">
+              <div class="flex justify-center mb-4 text-emerald-500 text-4xl">
+                <i class="fas fa-quran"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">Tahfizh Qur'an 4 Juz (SD)</h3>
+              <p class="text-gray-600 text-center">Program hafalan 4 juz untuk siswa SD dengan bimbingan guru profesional dan metode efektif.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform mx-auto md:my-5 md:mx-0 md:w-full">
+              <div class="flex justify-center mb-4 text-emerald-500 text-4xl">
+                <i class="fas fa-school"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">Pelajaran Umum (Pelajaran UN)</h3>
+              <p class="text-gray-600 text-center">Menyediakan materi umum dan persiapan UN agar siswa unggul akademik dan Qur’ani.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform mx-auto md:my-5 md:mx-0 md:w-full">
+              <div class="flex justify-center mb-4 text-emerald-500 text-4xl">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">Pelajaran Diniyyah</h3>
+              <p class="text-gray-600 text-center">Pembelajaran ilmu syar’i, fiqh, aqidah, dan akhlak secara terstruktur sesuai kurikulum Salaf.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform mx-auto md:my-5 md:mx-0 md:w-full">
+              <div class="flex justify-center mb-4 text-emerald-500 text-4xl">
+                <i class="fas fa-futbol"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">Ekstra Kurikuler</h3>
+              <p class="text-gray-600 text-center">Berbagai kegiatan tambahan untuk mengembangkan bakat, kreativitas, dan soft skill siswa.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- card -->
+  <div class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-4xl font-extrabold text-center mb-12 text-gray-800">Kegiatan Terbaru di Abais</h2>
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Card 1 (Tahfizh Camp) -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition group">
+        <div class="overflow-hidden">
+          <img src="img/WhatsApp Image 2025-09-09 at 10.45.31.jpeg" alt="Tahfizh Camp" 
+                class="w-full h-48 object-cover transform transition duration-500 
+                brightness-100 lg:brightness-50 lg:group-hover:brightness-100 lg:group-hover:scale-110">
+        </div>
+        <div class="p-5">
+          <span class="text-sm text-blue-600 font-medium">Event</span>
+          <h3 class="text-2xl font-bold text-gray-800">Tahfizh Camp</h3>
+          <p class="text-gray-600 text-sm mt-3">
+            Dalam kegiatan <span class="font-semibold">Tahfizh Camp</span>, anak-anak tidak hanya fokus pada hafalan Al-Qur’an, 
+            tetapi juga belajar membentuk pribadi yang berakhlak mulia. Mereka membaca, menghafal, memahami, dan berusaha mengamalkan Al-Qur’an, 
+            sekaligus meneladani sunnah Rasulullah ﷺ dalam kehidupan sehari-hari.
+          </p>
+          <a href="#" class="inline-block mt-4 px-5 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg hover:bg-blue-700 transition">
+            Baca Selengkapnya
+          </a>
+        </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform lg:-translate-y-24 mx-auto md:my-5 md:mx-0 md:w-full">
-        <div class="flex justify-center mb-4 text-emerald-500 text-4xl">
-          <i class="fas fa-quran"></i>
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition group">
+        <div class="overflow-hidden">
+          <img src="img/WhatsApp Image 2025-09-09 at 10.47.14.jpeg" alt="Blog Image" 
+          class="w-full h-48 object-cover transform transition duration-500 
+                brightness-100 lg:brightness-50 lg:group-hover:brightness-100 lg:group-hover:scale-110">
         </div>
-        <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">Tahfizh Qur'an 4 Juz (SD)</h3>
-        <p class="text-gray-600 text-center">Program hafalan 4 juz untuk siswa SD dengan bimbingan guru profesional dan metode efektif.</p>
+        <div class="p-5">
+          <span class="text-sm text-green-600 font-medium">Ibadah</span>
+          <h3 class="text-2xl font-bold mt-2 mb-3 text-gray-800">Dzikir dan Sholat Dhuha</h3>
+          <p class="text-gray-600 text-sm">Anak-anak diajak melaksanakan sholat dhuha bersama, lalu berdzikir pagi dengan penuh khusyuk. Melalui kegiatan ini, mereka belajar mensyukuri nikmat Allah, menenangkan hati, serta membiasakan diri dengan akhlak mulia sejak dini.</p>
+          <a href="#" class="inline-block mt-4 px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-lg hover:bg-green-700 transition">Baca Selengkapnya</a>
+        </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform lg:-translate-y-10 mx-auto md:my-5 md:mx-0 md:w-full">
-        <div class="flex justify-center mb-4 text-emerald-500 text-4xl">
-          <i class="fas fa-school"></i>
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition group">
+        <img src="img/WhatsApp Image 2025-09-09 at 16.03.37.jpeg" alt="Blog Image" 
+        class="w-full h-48 object-cover transform transition duration-500 
+                brightness-100 lg:brightness-50 lg:group-hover:brightness-100 lg:group-hover:scale-110">
+        <div class="p-5">
+          <span class="text-sm text-purple-600 font-medium">Tahfizh</span>
+          <h3 class="text-2xl font-bold mt-2 mb-3 text-gray-800">Tasmi' Hafalan Qur'an</h3>
+          <p class="text-gray-600 text-sm">Anak-anak diajak untuk melaksanakan tasmi’ hafalan Al-Qur’an secara rutin, membacakan kembali ayat-ayat yang telah mereka hafalkan dengan penuh ketelitian. Melalui kegiatan ini, mereka belajar mengingat, memahami, dan menjaga hafalan, sekaligus membiasakan diri disiplin, fokus, dan bertanggung jawab terhadap ilmu yang mereka pelajari.</p>
+          <a href="#" class="inline-block mt-4 px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-lg hover:bg-purple-700 transition">Baca Selengkapnya</a>
         </div>
-        <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">Pelajaran Umum (Pelajaran UN)</h3>
-        <p class="text-gray-600 text-center">Menyediakan materi umum dan persiapan UN agar siswa unggul akademik dan Qur’ani.</p>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform lg:-translate-y-40 mx-auto md:my-5 md:mx-0 md:w-full">
-        <div class="flex justify-center mb-4 text-emerald-500 text-4xl">
-          <i class="fas fa-graduation-cap"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">Pelajaran Diniyyah</h3>
-        <p class="text-gray-600 text-center">Pembelajaran ilmu syar’i, fiqh, aqidah, dan akhlak secara terstruktur sesuai kurikulum Salaf.</p>
-      </div>
-
-      <!-- Card kosong -->
-      <div class="bg-white p-8 rounded-2xl md:hidden lg:block hidden duration-300 transform ">
-        <div class="flex justify-center mb-4 text-emerald-500 text-4xl">
-          <i class="fas fa-futbol"></i>
-        </div>
-    
-      </div>
-
-      <!-- Card 5 -->
-      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 transform lg:-translate-y-56 mx-auto md:my-5 md:mx-0 md:w-full">
-        <div class="flex justify-center mb-4 text-emerald-500 text-4xl">
-          <i class="fas fa-futbol"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-gray-800 mb-2 text-center">Ekstra Kurikuler</h3>
-        <p class="text-gray-600 text-center">Berbagai kegiatan tambahan untuk mengembangkan bakat, kreativitas, dan soft skill siswa.</p>
       </div>
 
     </div>
-
-
-    <!-- Row Bawah (Tengah) -->
-    <div class="flex flex-col lg:flex-row justify-center items-start gap-8 mt-12">
-      
-        <div></div>
-      
-    </div>
   </div>
-</section>
 
 
 
-  </div>
-</section>
   <script src="main.js"></script>
 </body>
 </html>
